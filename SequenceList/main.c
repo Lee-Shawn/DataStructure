@@ -6,7 +6,11 @@
 int main()
 {
     List L;
-    L = makeEmpty();
+
+    L = readList();
+    insertElement(L, 99, 1);
+    deleteElement(L, 3);
+    printList(L);
 
     return 0;
 }

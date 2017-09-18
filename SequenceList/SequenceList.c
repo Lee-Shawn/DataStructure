@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "SequenceList.h"
 
 /**
@@ -11,6 +12,23 @@ List makeEmpty()
 
     L = (List)malloc(sizeof(struct Node));
     L->last = -1;
+
+    return L;
+}
+
+List readList()
+{
+    int i, length;
+    List L;
+
+    L = makeEmpty();
+    printf("输入顺序表的长度：\n");
+    scanf("%d", &length);
+    for (i = 0; i < length; i++)
+    {
+        scanf("%d", &L->data[i]);
+        L->last++;
+    }
 
     return L;
 }
@@ -50,14 +68,14 @@ bool insertElement(List L, ElementType x, Position p)
     }
 
     // 从最后一个元素开始往后移一位，直到要插入的位置
-    for (i = L->last; i > p; i--)
+    for (i = L->last; i >= p; i--)
     {
         L->data[i+1] = L->data[i];
     }
     // 赋值给新插入的位置
-    L.data[p] = x;
+    L->data[p] = x;
     // 顺序表指向新的最后的元素，表长加一
-    L.last++;
+    L->last++;
 
     return true;
 }
@@ -76,11 +94,22 @@ bool deleteElement(List L, Position p)
     }
 
     // 把p后面的元素向前移动
-    for (i = p+1; i < L->last; i++)
+    for (i = p+1; i <= L->last; i++)
     {
-        L.data[i-1] = L.data[i];
+        L->data[i-1] = L->data[i];
     }
     L->last--;
 
     return true;
+}
+
+void printList(List L)
+{
+    int i;
+
+    for (i = 0; i <= L->last; i++)
+    {
+        printf("%d ", L->data[i]);
+    }
+    printf("\n");
 }

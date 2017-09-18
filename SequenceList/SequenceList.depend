@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1505744859 source:f:\code\github\datastructure\sequencelist\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SequenceList.h"
+
+1505744989 f:\code\github\datastructure\sequencelist\sequencelist.h
+	<stdbool.h>
+
+1505744981 source:f:\code\github\datastructure\sequencelist\sequencelist.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"SequenceList.h"
+
