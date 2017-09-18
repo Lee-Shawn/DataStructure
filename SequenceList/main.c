@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "SequenceList.h"
+
 
 int main()
 {
-    printf("Hello world!\n");
+    List L;
+    L = makeEmpty();
+
     return 0;
 }
