@@ -89,11 +89,15 @@ void insertNode(List L, ElementType x, int i)
         exit(-1);
     }
 
+    // 把新结点插入到链表中
     newNode->data = x;
     newNode->next = p->next;
     p->next = newNode;
 }
 
+/**
+* 删除结点
+*/
 void deleteNode(List L, int i)
 {
     Position p = findNode(L, i-1);
@@ -104,11 +108,15 @@ void deleteNode(List L, int i)
         exit(-1);
     }
 
+    // 指向要删除的结点，否则会段链
     List q = p->next;
     p->next = q->next;
     free(q);
 }
 
+/**
+* 打印链表的值
+*/
 void printList(List L)
 {
     List p = L->next;
