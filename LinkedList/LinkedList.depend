@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1505835886 source:f:\code\github\datastructure\linkedlist\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1505835758 f:\code\github\datastructure\linkedlist\linkedlist.h
+
