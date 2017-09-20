@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1505920525 source:f:\code\github\datastructure\linkedlistmerge\linkedlistmerge.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedListMerge.h"
+
+1505919329 f:\code\github\datastructure\linkedlistmerge\linkedlistmerge.h
+
