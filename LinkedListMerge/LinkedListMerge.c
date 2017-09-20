@@ -3,10 +3,14 @@
 #include "LinkedListMerge.h"
 
 
+/**
+* 用头插法创建链表
+*/
 List createList()
 {
     int i, length, value;
 
+    // 分配头结点
     List pHead = (List)malloc(sizeof(struct Node));
     pHead->next = NULL;
     List pTail = pHead;
@@ -21,6 +25,7 @@ List createList()
     scanf("%d", &length);
     printf("输入链表的值：\n");
 
+    // 创建链表，输入链表的值
     for (i = 0; i < length; i++)
     {
         List pNode = (List)malloc(sizeof(struct Node));
@@ -33,6 +38,7 @@ List createList()
 
         scanf("%d", &value);
         pNode->data = value;
+        // 把新分配的结点接在后面
         pTail->next = pNode;
         pNode->next = NULL;
         pTail = pNode;
@@ -41,15 +47,21 @@ List createList()
     return pHead;
 }
 
+/**
+* 按非递减的顺序合并两个有序的单链表
+*/
 List mergeList(List L1, List L2)
 {
+    // 分配一个新的头结点作为合并后的链表的头
     List L = (List)malloc(sizeof(struct Node));
     L->next = NULL;
     List s = L;
     List a, b;
+    // p和q是L1和L2的工作结点
     List p = L1->next;
     List q = L2->next;
 
+    // L1和L2都不空的时候合并
     while (p && q)
     {
         if (p->data < q->data)
@@ -68,6 +80,7 @@ List mergeList(List L1, List L2)
         }
     }
 
+    // 只剩下L1
     while (p)
     {
         a = p->next;
@@ -76,6 +89,7 @@ List mergeList(List L1, List L2)
         p = a;
     }
 
+    // 只剩下L2
     while (q)
     {
         b = q->next;
@@ -90,6 +104,9 @@ List mergeList(List L1, List L2)
     return L;
 }
 
+/**
+* 打印链表
+*/
 void printList(List L)
 {
     List p = L->next;
