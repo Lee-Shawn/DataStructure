@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "LinkedListReverse.h"
 
+/**
+* 头插法创建单链表
+*/
 List createList()
 {
     int i, length, value;
@@ -40,10 +43,15 @@ List createList()
     return pHead;
 }
 
+/**
+* 逆置单链表
+*/
 List reverseList(List L)
 {
     List s;
+    // 指向第一个结点
     List p = L->next;
+    // 把头结点置为空
     L->next = NULL;
 
     if (p == NULL)
@@ -51,7 +59,9 @@ List reverseList(List L)
 
     while (p)
     {
+        // 指向p的下一个结点，防止断链
         s = p->next;
+        // 把p插入到头结点后面
         p->next = L->next;
         L->next = p;
         p = s;
@@ -60,6 +70,9 @@ List reverseList(List L)
     return L;
 }
 
+/**
+* 打印单链表
+*/
 void printList(List L)
 {
     List p = L->next;
