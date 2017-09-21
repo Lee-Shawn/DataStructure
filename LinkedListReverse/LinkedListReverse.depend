@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1506006349 source:f:\code\github\datastructure\linkedlistreverse\linkedlistreverse.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedListReverse.h"
+
+1506005435 f:\code\github\datastructure\linkedlistreverse\linkedlistreverse.h
+
