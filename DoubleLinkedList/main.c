@@ -5,8 +5,8 @@
 int main()
 {
     List L = createList();
-    insertNode(L, x, p);
-    deleteNode(L, p);
+    //insertNode(L, 66, 2);
+    //deleteNode(L, 88);
     printList(L);
 
     return 0;
