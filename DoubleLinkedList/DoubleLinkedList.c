@@ -18,6 +18,11 @@ void deleteNode(List L, int p)
 
 }
 
+Position findNode(List L, ElementType x)
+{
+
+}
+
 void printList(List L)
 {
 
