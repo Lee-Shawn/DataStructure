@@ -5,7 +5,7 @@
 int main()
 {
     List L = createList();
-    //insertNode(L, 66, 2);
+    insertNode(L, 66, 3);
     //deleteNode(L, 88);
     printList(L);
 
