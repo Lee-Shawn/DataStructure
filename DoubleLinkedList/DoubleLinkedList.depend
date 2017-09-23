@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1506149237 source:f:\code\github\datastructure\doublelinkedlist\doublelinkedlist.c
+1506150924 source:f:\code\github\datastructure\doublelinkedlist\doublelinkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	"DoubleLinkedList.h"
 
 1506149108 f:\code\github\datastructure\doublelinkedlist\doublelinkedlist.h
 
-1506149301 source:f:\code\github\datastructure\doublelinkedlist\main.c
+1506151044 source:f:\code\github\datastructure\doublelinkedlist\main.c
 	<stdio.h>
 	<stdlib.h>
 	"DoubleLinkedList.h"

@@ -80,7 +80,28 @@ void insertNode(List L, ElementType x, int i)
 
 void deleteNode(List L, int i)
 {
+    List p,q;
 
+    if (i > lengthList(L))
+    {
+        printf("删除的位置不合法！\n");
+        exit(-1);
+    }
+
+    p = findNode(L, i-1);
+    q = p->next;
+
+    if (q->next == NULL)
+    {
+        free(q);
+        p->next = NULL;
+    }
+    else
+    {
+        p->next = q->next;
+        q->next->prior = q->prior;
+        free(q);
+    }
 }
 
 
@@ -91,7 +112,7 @@ List findNode(List L, int i)
 
     if (i < 0)
     {
-        printf("插入位置不合法！\n");
+        printf("查找位置不合法！\n");
         return NULL;
     }
 
@@ -107,6 +128,9 @@ List findNode(List L, int i)
     return p;
 }
 
+/**
+*
+*/
 int lengthList(List L)
 {
     int length = 0;
