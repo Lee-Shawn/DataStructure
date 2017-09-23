@@ -3,6 +3,9 @@
 #include "DoubleLinkedList.h"
 
 
+/**
+* 头插法创建双链表
+*/
 List createList()
 {
     int i, length, value;
@@ -42,6 +45,9 @@ List createList()
     return pHead;
 }
 
+/**
+* 插入结点
+*/
 void insertNode(List L, ElementType x, int i)
 {
     List p;
@@ -63,13 +69,13 @@ void insertNode(List L, ElementType x, int i)
     }
     s->data = x;
 
-    if (p->next == NULL)// 如果插入的位置是最后一一个结点之后
+    if (p->next == NULL)// 在最后一个结点后面插入结点
     {
         s->prior = p;
         p->next = s;
         s->next = NULL;
     }
-    else
+    else // 其他位置插入结点
     {
         s->next = p->next;
         s->prior = p->next->prior;
@@ -78,25 +84,30 @@ void insertNode(List L, ElementType x, int i)
     }
 }
 
+/**
+* 删除结点
+*/
 void deleteNode(List L, int i)
 {
     List p,q;
 
+    // 删除的位置不能大于链表的长度
     if (i > lengthList(L))
     {
         printf("删除的位置不合法！\n");
         exit(-1);
     }
 
+    // 获取要删除结点的前驱结点
     p = findNode(L, i-1);
     q = p->next;
 
-    if (q->next == NULL)
+    if (q->next == NULL)// 删除最后一个结点
     {
         free(q);
         p->next = NULL;
     }
-    else
+    else// 删除其他结点
     {
         p->next = q->next;
         q->next->prior = q->prior;
@@ -104,7 +115,9 @@ void deleteNode(List L, int i)
     }
 }
 
-
+/**
+* 按序号查找结点位置
+*/
 List findNode(List L, int i)
 {
     int j = 1;
@@ -129,7 +142,7 @@ List findNode(List L, int i)
 }
 
 /**
-*
+* 求双链表的长度
 */
 int lengthList(List L)
 {
@@ -151,6 +164,9 @@ int lengthList(List L)
     return length;
 }
 
+/**
+* 打印双链表
+*/
 void printList(List L)
 {
     List p = L->next;
