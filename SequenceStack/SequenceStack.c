@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "SequenceStack.h"
 
+/**
+* 创建栈
+*/
 Stack createStack(int size)
 {
     Stack s = (Stack)malloc(sizeof(struct SNode));
@@ -12,6 +15,9 @@ Stack createStack(int size)
     return s;
 }
 
+/**
+* 入栈
+*/
 int push(Stack s, ElementType x)
 {
     if (isFull(s))
@@ -26,6 +32,9 @@ int push(Stack s, ElementType x)
     }
 }
 
+/**
+* 出栈
+*/
 int pop(Stack s)
 {
     if (isEmpty(s))
@@ -40,6 +49,9 @@ int pop(Stack s)
     }
 }
 
+/**
+* 判断栈满
+*/
 int isFull(Stack s)
 {
     if (s->top == s->maxSize-1)
@@ -48,6 +60,9 @@ int isFull(Stack s)
         return 0;
 }
 
+/**
+* 判断栈空
+*/
 int isEmpty(Stack s)
 {
     if (s->top == -1)
@@ -56,6 +71,9 @@ int isEmpty(Stack s)
         return 0;
 }
 
+/**
+* 打印栈
+*/
 void printStack(Stack s)
 {
     int i;
