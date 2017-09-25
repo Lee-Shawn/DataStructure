@@ -10,6 +10,9 @@ int main()
     while (!isFull(s))
         push(s, i++);
 
+    pop(s);
+
+    printStack(s);
 
     return 0;
 }

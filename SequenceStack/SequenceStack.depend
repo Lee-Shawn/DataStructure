@@ -6,3 +6,8 @@
 
 1506348403 f:\code\github\datastructure\sequencestack\sequencestack.h
 
+1506348439 source:f:\code\github\datastructure\sequencestack\sequencestack.c
+	<stdio.h>
+	<stdlib.h>
+	"SequenceStack.h"
+
