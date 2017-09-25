@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="SequenceStack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SequenceStack.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -7,6 +7,7 @@ Stack createStack(int size)
     Stack s = (Stack)malloc(sizeof(struct SNode));
     s->data = (ElementType *)malloc(size * sizeof(ElementType));
     s->top = -1;
+    s->maxSize = size;
 
     return s;
 }
@@ -41,7 +42,7 @@ int pop(Stack s)
 
 int isFull(Stack s)
 {
-    if (s->top == MaxSize-1)
+    if (s->top == s->maxSize-1)
         return 1;
     else
         return 0;
@@ -53,4 +54,14 @@ int isEmpty(Stack s)
         return 1;
     else
         return 0;
+}
+
+void printStack(Stack s)
+{
+    int i;
+
+    for (i = 0; i <= s->top; i++)
+        printf("%d ", s->data[i]);
+
+    printf("\n");
 }

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1506347796 source:f:\code\github\datastructure\sequencestack\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SequenceStack.h"
+
+1506348403 f:\code\github\datastructure\sequencestack\sequencestack.h
+
