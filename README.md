@@ -15,3 +15,7 @@
 （3）LinkedListReverse：逆置单链表</br>
 3、双链表</br>
 （1）DoubleLinkedList：双链表的插入和删除操作
+
+* 栈</br>
+>1、顺序栈</br>
+（1）SequenceStack：顺序栈的出栈和入栈
