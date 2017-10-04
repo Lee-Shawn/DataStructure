@@ -10,7 +10,7 @@ Queue initQueue(int maxSize);
 int isEmpty(Queue Q);
 int isFull(Queue Q);
 int enQueue(Queue Q, ElementType x);
-int deQueue(Queue Q);
+ElementType deQueue(Queue Q);
 
 #endif // _SequenceQueue_H_
 
