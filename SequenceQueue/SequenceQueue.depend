@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1507132342 source:f:\code\github\datastructure\sequencequeue\main.c
+	<stdio.h>
+	<stdlib.h>
+	"SequenceQueue.h"
+
+1507132209 f:\code\github\datastructure\sequencequeue\sequencequeue.h
+
+1507132201 source:f:\code\github\datastructure\sequencequeue\sequencequeue.c
+	<stdio.h>
+	<stdlib.h>
+	"SequenceQueue.h"
+
