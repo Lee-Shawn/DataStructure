@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include "SequenceQueue.h"
 
+/**
+* 创建队列
+*/
 Queue initQueue(int maxSize)
 {
     Queue Q = (Queue)malloc(sizeof(struct QNode));
@@ -12,6 +15,9 @@ Queue initQueue(int maxSize)
     return Q;
 }
 
+/**
+* 判断队列是否为空
+*/
 int isEmpty(Queue Q)
 {
     if (Q->front == Q->rear)
@@ -20,6 +26,9 @@ int isEmpty(Queue Q)
         return 0;
 }
 
+/**
+* 判断队列是否已满
+*/
 int isFull(Queue Q)
 {
     if ((Q->rear+1)%Q->maxSize == Q->front)
@@ -28,6 +37,9 @@ int isFull(Queue Q)
         return 0;
 }
 
+/**
+* 入对
+*/
 int enQueue(Queue Q, ElementType x)
 {
     if (isFull(Q))
@@ -43,6 +55,9 @@ int enQueue(Queue Q, ElementType x)
     }
 }
 
+/**
+* 出对
+*/
 ElementType deQueue(Queue Q)
 {
     if (isEmpty(Q))
