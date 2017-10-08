@@ -3,6 +3,9 @@
 #include "BinTree.h"
 #include "Stack.h"
 
+/**
+* 创建栈
+*/
 Stack createStack(int MaxSize)
 {
     Stack s = (Stack)malloc(sizeof(struct SNode));
@@ -13,6 +16,9 @@ Stack createStack(int MaxSize)
     return s;
 }
 
+/**
+* 进栈
+*/
 int push(Stack s, ElementType x)
 {
     if (isFull(s))
@@ -27,6 +33,9 @@ int push(Stack s, ElementType x)
     }
 }
 
+/**
+* 出栈
+*/
 ElementType pop(Stack s)
 {
     if (isEmpty(s))
@@ -40,6 +49,9 @@ ElementType pop(Stack s)
     }
 }
 
+/**
+* 栈是否满
+*/
 int isEmpty(Stack s)
 {
     if (s->top == -1)
@@ -48,6 +60,9 @@ int isEmpty(Stack s)
         return 0;
 }
 
+/**
+* 栈是否空
+*/
 int isFull(Stack s)
 {
     if (s->top == s->MaxSize-1)
