@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "BinTreePreOrder.h"
+#include "BinTree.h"
+#include "Stack.h"
 
 int main()
 {
-    BTree BT;
+    //BTree BT;
 
     return 0;
 }

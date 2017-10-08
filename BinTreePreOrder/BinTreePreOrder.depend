@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1507454830 source:f:\code\github\datastructure\bintreepreorder\bintree.c
+	<stdio.h>
+	<stdlib.h>
+	"BinTree.h"
+
+1507454430 f:\code\github\datastructure\bintreepreorder\bintree.h
+
