@@ -1,8 +1,23 @@
 # depslib dependency file v1.0
-1507454830 source:f:\code\github\datastructure\bintreepreorder\bintree.c
+1507471521 source:f:\code\github\datastructure\bintreepreorder\bintree.c
 	<stdio.h>
 	<stdlib.h>
 	"BinTree.h"
+	"Stack.h"
 
-1507454430 f:\code\github\datastructure\bintreepreorder\bintree.h
+1507471500 f:\code\github\datastructure\bintreepreorder\bintree.h
+
+1507470811 source:f:\code\github\datastructure\bintreepreorder\main.c
+	<stdio.h>
+	<stdlib.h>
+	"BinTree.h"
+	"Stack.h"
+
+1507471695 f:\code\github\datastructure\bintreepreorder\stack.h
+
+1507471690 source:f:\code\github\datastructure\bintreepreorder\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"BinTree.h"
+	"Stack.h"
 
