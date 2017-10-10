@@ -19,7 +19,7 @@
 * 栈</br>
 >1、顺序栈</br>
 （1）SequenceStack：顺序栈的出栈和入栈</br>
-（2）ParenthesisMatchingM：括号匹配
+（2）ParenthesisMatching：括号匹配
 
 * 队列</br>
 >1、顺序队列</br>
@@ -30,3 +30,4 @@
 * 树</br>
 >1、二叉树</br>
 （1）BinTreePreOrder：二叉树的先序遍历</br>
+（1）BinTreeInOrder：二叉树的中序遍历</br>
