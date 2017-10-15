@@ -31,6 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="BinTree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BinTree.h" />
+		<Unit filename="Stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Stack.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
