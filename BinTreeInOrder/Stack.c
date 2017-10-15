@@ -5,17 +5,39 @@
 
 Stack createStack(int MaxSzie)
 {
+    Stack s = (Stack)malloc(sizeof(struct SNode));
+    s->data = (ElementType *)malloc(sizeof(ElementType));
+    s->MaxSize = MaxSzie;
+    s->top = -1;
 
+    return s;
 }
 
 int push(Stack s, ElementType x)
 {
-
+    if (isFull(s))
+    {
+        printf("Õ»ÒÑÂú£¡\n");
+        return 0;
+    }
+    else
+    {
+        s->data[++(s->top)] = x;
+        return 1;
+    }
 }
 
 int pop(Stack s)
 {
-
+    if (isEmpty(s))
+    {
+        printf("Õ»Îª¿Õ£¡\n");
+        return 0;
+    }
+    else
+    {
+        return s->data[(s->top)--];
+    }
 }
 
 int isEmpty(Stack s)
