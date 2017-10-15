@@ -3,6 +3,9 @@
 
 typedef struct BTNode *BTree;
 
+BTree createBTree();
+void InOrder(BTree BT);
+
 #endif // _BinTree_H_
 
 

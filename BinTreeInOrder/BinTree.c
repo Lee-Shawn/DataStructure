@@ -23,3 +23,24 @@ BTree createBTree()
 
     return BT;
 }
+
+void InOrder(BTree BT)
+{
+    BTree T = BT;
+    Stack s = createStack(10);
+
+    while (T || !isEmpty(s))
+    {
+        while (T)
+        {
+            push(s, T);
+            T = T->left;
+        }
+        if (!isEmpty(s))
+        {
+            printf("%d", T->data);
+            T = pop(s);
+            T = T->right;
+        }
+    }
+}
