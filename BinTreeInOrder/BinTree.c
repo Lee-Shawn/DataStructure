@@ -9,7 +9,7 @@ BTree createBTree()
     ElementType data;
     scanf("%d", &data);
 
-    if (BT == 0)
+    if (data == 0)
     {
         BT == NULL;
     }
@@ -27,7 +27,7 @@ BTree createBTree()
 void InOrder(BTree BT)
 {
     BTree T = BT;
-    Stack s = createStack(10);
+    Stack s = createStack(20);
 
     while (T || !isEmpty(s))
     {
@@ -38,8 +38,8 @@ void InOrder(BTree BT)
         }
         if (!isEmpty(s))
         {
-            printf("%d", T->data);
             T = pop(s);
+            printf("%d ", T->data);
             T = T->right;
         }
     }

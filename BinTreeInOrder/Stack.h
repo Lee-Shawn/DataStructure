@@ -5,7 +5,7 @@ typedef struct SNode *Stack;
 
 Stack createStack(int MaxSize);
 int push(Stack s, ElementType x);
-int pop(Stack s);
+ElementType pop(Stack s);
 int isEmpty(Stack s);
 int isFull(Stack s);
 

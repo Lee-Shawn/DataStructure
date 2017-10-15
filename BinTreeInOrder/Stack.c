@@ -6,7 +6,7 @@
 Stack createStack(int MaxSzie)
 {
     Stack s = (Stack)malloc(sizeof(struct SNode));
-    s->data = (ElementType *)malloc(sizeof(ElementType));
+    s->data = (ElementType *)malloc(MaxSzie * sizeof(ElementType));
     s->MaxSize = MaxSzie;
     s->top = -1;
 
@@ -27,7 +27,7 @@ int push(Stack s, ElementType x)
     }
 }
 
-int pop(Stack s)
+ElementType pop(Stack s)
 {
     if (isEmpty(s))
     {

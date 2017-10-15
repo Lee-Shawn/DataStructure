@@ -1,6 +1,6 @@
 #ifndef _BinTree_H_
 
-
+typedef int ElementType;
 typedef struct BTNode *BTree;
 
 BTree createBTree();
