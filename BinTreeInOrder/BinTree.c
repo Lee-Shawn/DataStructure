@@ -3,6 +3,9 @@
 #include "Stack.h"
 #include "BinTree.h"
 
+/**
+* 创建二叉树
+*/
 BTree createBTree()
 {
     BTree BT;
@@ -24,6 +27,9 @@ BTree createBTree()
     return BT;
 }
 
+/**
+* 中序非递归遍历
+*/
 void InOrder(BTree BT)
 {
     BTree T = BT;
@@ -31,11 +37,13 @@ void InOrder(BTree BT)
 
     while (T || !isEmpty(s))
     {
+        // 一路向左走下去并压栈
         while (T)
         {
             push(s, T);
             T = T->left;
         }
+        // 栈中不空，出栈后打印，向右走
         if (!isEmpty(s))
         {
             T = pop(s);
