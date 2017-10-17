@@ -3,6 +3,9 @@
 #include "Stack.h"
 #include "BinTree.h"
 
+/**
+* ´´½¨Õ»
+*/
 Stack createStack(int MaxSzie)
 {
     Stack s = (Stack)malloc(sizeof(struct SNode));
@@ -13,6 +16,9 @@ Stack createStack(int MaxSzie)
     return s;
 }
 
+/**
+* Ñ¹Õ»
+*/
 int push(Stack s, ElementType x)
 {
     if (isFull(s))
@@ -27,6 +33,9 @@ int push(Stack s, ElementType x)
     }
 }
 
+/**
+* ³öÕ»
+*/
 ElementType pop(Stack s)
 {
     if (isEmpty(s))
@@ -40,6 +49,9 @@ ElementType pop(Stack s)
     }
 }
 
+/**
+* ÅÐ¿Õ
+*/
 int isEmpty(Stack s)
 {
     if (s->top == -1)
@@ -48,6 +60,9 @@ int isEmpty(Stack s)
         return 0;
 }
 
+/**
+* Õ»Âú
+*/
 int isFull(Stack s)
 {
     if (s->top == s->MaxSize-1)
