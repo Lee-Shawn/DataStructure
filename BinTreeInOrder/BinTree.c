@@ -39,7 +39,7 @@ void InOrder(BTree BT)
         if (!isEmpty(s))
         {
             T = pop(s);
-            printf("%d ", T->data);
+            printf("%5d", T->data);
             T = T->right;
         }
     }
