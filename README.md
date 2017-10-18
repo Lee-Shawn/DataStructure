@@ -30,4 +30,4 @@
 * 树</br>
 >1、二叉树</br>
 （1）BinTreePreOrder：二叉树的先序遍历</br>
-（1）BinTreeInOrder：二叉树的中序遍历</br>
+（2）BinTreeInOrder：二叉树的中序遍历</br>
