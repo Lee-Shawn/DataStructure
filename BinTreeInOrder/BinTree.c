@@ -14,7 +14,7 @@ BTree createBTree()
 
     if (data == 0)
     {
-        BT == NULL;
+        BT = NULL;
     }
     else
     {
@@ -47,7 +47,7 @@ void InOrder(BTree BT)
         if (!isEmpty(s))
         {
             T = pop(s);
-            printf("%5d", T->data);
+            printf("%d ", T->data);
             T = T->right;
         }
     }
