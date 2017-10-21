@@ -8,7 +8,7 @@ typedef struct SNode *Stack;
 
 
 struct SNode {
-    ElementType data;
+    ElementType *data;
     int top;
     int maxSize;
 };
